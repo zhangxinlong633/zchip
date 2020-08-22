@@ -1,5 +1,3 @@
-#include <stdio.h>
-
 int main_result;
 
 #define R 0
@@ -299,13 +297,6 @@ int main (int argc, char **argv)
 	{
 	  main_result += (dmem[j] == outData[j]);
 	}
-
-      printf ("Result: %d\n", main_result);
-      if (main_result == 9) {
-          printf("RESULT: PASS\n");
-      } else {
-          printf("RESULT: FAIL\n");
-      }
 
       return main_result;
     }
